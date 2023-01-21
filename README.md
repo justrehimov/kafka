@@ -3,6 +3,8 @@
 
 A brief description of what this project does and who it's for
 
+In this project you can send data to another service using Apache Kafka
+
 Run docker-compose file using ```docker compose up``` command, but change ip addresses in docker-compose.yml with your local ip address before using command
 
 Run kafka-producer project, then  
