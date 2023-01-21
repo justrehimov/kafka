@@ -1,0 +1,7 @@
+server:
+  port: 8081
+spring:
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonDeserializer
