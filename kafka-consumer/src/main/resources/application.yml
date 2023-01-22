@@ -5,3 +5,5 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringDeserializer
       value-serializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    consumer:
+      group-id: kafka-consumer

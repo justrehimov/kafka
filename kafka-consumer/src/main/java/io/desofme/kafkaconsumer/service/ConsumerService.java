@@ -14,7 +14,7 @@ public class ConsumerService {
 
     private final ObjectMapper objectMapper;
 
-    @KafkaListener(topics = Topic.MESSAGE_TOPIC, groupId = "groupID")
+    @KafkaListener(topics = Topic.MESSAGE_TOPIC)
     public void consume(ConsumerRecord<String, Object> data) throws Exception {
         log.info("Message from topic: {} message: {}",
                 Topic.MESSAGE_TOPIC, objectMapper.writeValueAsString(data.value()));
